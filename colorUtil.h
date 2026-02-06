@@ -21,7 +21,7 @@ std::ostream& operator<<(std::ostream& os, const rgb& obj) {
     return os;
 }
 
-rgb hsv2rgb(hsv HSV)
+rgb hsv2rgb(hsv HSV) // https://stackoverflow.com/a/36209005
 {
     rgb RGB;
     double H = HSV.h, S = HSV.s, V = HSV.v,
